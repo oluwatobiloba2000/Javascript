@@ -475,17 +475,31 @@ const nameOfWorkers = [
 ]
 
 //Print to the console the firstname and lastname of the all workers
-  console.log("FIRSTNAMES OF ALL WORKERS");
-  const allFirstNames = nameOfWorkers.map((x)=>x.firstName);
-  console.log(allFirstNames);
+console.log("FIRSTNAMES OF ALL WORKERS");
+var allFirstNames = nameOfWorkers.map((x)=>x.firstName);
+  for(i = 0; i < allFirstNames.length; i++){
+      console.log(allFirstNames[i]);
+  }
 
-  console.log("LASTNAMES OF ALL WORKERS");
-  const allLastNames = nameOfWorkers.map((i)=>i.lastName);
-  console.log(allLastNames);
+console.log("LASTNAMES OF ALL WORKERS");
+var allLastNames = nameOfWorkers.map((x)=>x.lastName);
+  for (i = 0 ; i < allLastNames.length; i++){
+      console.log(allLastNames[i]);
+  }
 
-//YET TO PRINT TO THE CONSOLE THE TOTAL SALARY OF ALL WORKERS
+  //TOTAL SALARIES OF ALL THE WORKERS
+console.log("TOTAL SALARY OF ALL WORKERS");
+var totalSalaries = nameOfWorkers.map((x)=>x.salary );
+   for(i = 0; i < totalSalaries.length; i++){
+      console.log(totalSalaries[i]);
+}
 
-//YET TO PRINT THE AVERAGE AGE OF ALL WORKERS
+// THE AVERAGE AGE OF ALL WORKERS
+console.log("AVERAGE AGE OF ALL THE WORKERS");
+var ages = nameOfWorkers.map((x)=>x.age / 2);
+   for (i = 0 ; i < ages.length; i++){
+      console.log(ages[i]);
+}
 
 //PERSONAL INFO AT INDEX 33
   console.log("PERSONAL INFO OF WORKER AT INDEX 33");
@@ -505,10 +519,10 @@ var milnerInfo = nameOfWorkers[44].firstName = "Milner";
   console.log("MILLER HAS JUST BEEN UPDATED TO MILNER");
   console.log(milnerInfo);
 
- console.log("********************");
- console.log("UPDATED OBJECT");
- console.log(nameOfWorkers[44]);
- console.log("*********************");
+  console.log("********************");
+  console.log("UPDATED OBJECT - FIRSTNAME");
+  console.log(nameOfWorkers[44]);
+  console.log("*********************");
 
 //UPDATING ALDUS ADAM'S GENDER FROM MALE TO FEMALE
 var aldusInfo = nameOfWorkers[49].gender = "FEMALE";
@@ -516,9 +530,7 @@ var aldusInfo = nameOfWorkers[49].gender = "FEMALE";
   console.log(aldusInfo);
 
   console.log("********************");
-  console.log("UPDATED OBJECT");
+  console.log("UPDATED OBJECT - GENDER");
   console.log(nameOfWorkers[49]);
   console.log("*********************");
-// for (i = 0 ; i < allFirstNames.length; i++){
- //  console.log(allFirstNames);
-// }
+
