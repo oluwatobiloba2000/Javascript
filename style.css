@@ -1,0 +1,35 @@
+html{
+    margin: 0;
+    padding:0;
+    background-color: rgba(128, 128, 128, 0.424);
+}
+.container{
+    display: flex;
+}
+.box{
+    border-radius: 15px;
+    margin-top: 15px;
+    padding-left: 15px;
+    background-color: aliceblue;
+}
+.img2{
+  margin-left: 5px;
+}
+img{
+    border-radius: 15px;
+}
+.container2{
+    display: flex;
+}
+footer{
+    text-align: center;
+}
+@media all and (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+    .container2{
+        flex-direction: column;
+
+    }
+}
