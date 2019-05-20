@@ -475,7 +475,14 @@ const nameOfWorkers = [
 ]
 
 //Print to the console the firstname and lastname of the all workers
-console.log("FIRSTNAMES OF ALL WORKERS");
+console.log("FIRSTNAMES AND LASTNAMES OF ALL THE WORKERS");
+var allFirstNames = nameOfWorkers.map((x)=>x.firstName);
+var allLastNames = nameOfWorkers.map((i)=>i.lastName);
+
+ for(i = 0; i< nameOfWorkers.length; i++){
+     console.log(allFirstNames[i] +" "+ allLastNames[i]);
+ }
+/* console.log("FIRSTNAMES OF ALL WORKERS");
 var allFirstNames = nameOfWorkers.map((x)=>x.firstName);
   for(i = 0; i < allFirstNames.length; i++){
       console.log(allFirstNames[i]);
@@ -486,7 +493,7 @@ var allLastNames = nameOfWorkers.map((x)=>x.lastName);
   for (i = 0 ; i < allLastNames.length; i++){
       console.log(allLastNames[i]);
   }
-
+ */
   //TOTAL SALARIES OF ALL THE WORKERS
 console.log("TOTAL SALARY OF ALL WORKERS");
 var totalSalaries = nameOfWorkers.map((x)=>x.salary );
@@ -496,7 +503,7 @@ var totalSalaries = nameOfWorkers.map((x)=>x.salary );
 
 // THE AVERAGE AGE OF ALL WORKERS
 console.log("AVERAGE AGE OF ALL THE WORKERS");
-var ages = nameOfWorkers.map((x)=>x.age / 2);
+var ages = nameOfWorkers.map((x)=> x.age / 2);
    for (i = 0 ; i < ages.length; i++){
       console.log(ages[i]);
 }
@@ -533,4 +540,3 @@ var aldusInfo = nameOfWorkers[49].gender = "FEMALE";
   console.log("UPDATED OBJECT - GENDER");
   console.log(nameOfWorkers[49]);
   console.log("*********************");
-
